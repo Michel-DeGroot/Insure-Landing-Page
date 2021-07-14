@@ -1,0 +1,98 @@
+.benefit{
+    text-align: center;
+    @media(min-width: 700px){
+      text-align: left;
+      width: 80%;
+      margin: auto;
+    }
+  }
+  
+  .benefit__heading{
+    font-size: calc(2.5rem + 1vw);
+    letter-spacing: 2px;
+    color: var(--vdrViolet);
+  }
+  
+  .benefit__container{
+    display: flex;
+    flex-direction: column;
+    @media(min-width: 700px){
+      flex-direction: row;
+      &>*{
+        width: 100%;
+      }
+    }
+  }
+  
+  .benefit__item{
+    padding: 1rem;
+    @media(min-width: 700px){
+     /* transition: all 0.3s linear; */
+      cursor: pointer;
+      &:hover{
+        box-shadow: -2px 2px 8px 2px hsla(240, 12%, 15%, 0.8);
+        transform: translate(-2rem, -2rem) scale(1.1);
+        backdrop-filter: blur(0.5);
+        border-radius: 5px;
+        background: hsla(0, 0%, 95%, 0.8);
+      }
+      &:active{
+        transform: scale(0.9); 
+      }
+    }
+  }
+  
+  .benefit__item>h2{
+    color: var(--vdrViolet);
+    font-size: 2rem;
+  }
+  
+  .benefit__item>p{
+    color: var(--dgrViolet);
+    font-weight: 700;
+  }
+  
+  .banner{
+    margin: 2rem 1rem;
+    color: hsl(0, 0%, 100%);
+    padding: 2rem 1rem;
+    text-align: center;
+    background-color: var(--drViolet);
+    background-image: url("./../images/bg-pattern-how-we-work-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: top right;
+    @media(min-width: 700px){
+      margin: 2rem auto;
+      padding: 1rem 1rem;
+      width: 80%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      text-align: left;
+      background-image: url("./../images/bg-pattern-how-we-work-desktop.svg");
+      background-size: auto 100%;
+      &>*{
+        width: 100%;
+      }
+    }
+  }
+  
+  .banner__heading{
+    font-size: 3rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    @media(min-width: 700px){
+      margin-left: 1rem;
+      font-size: calc(3rem + 0.2vw);
+    }
+  }
+  
+  .banner__link{
+    text-align: center;
+    display: block;
+    max-width: 10rem;
+    padding: .5rem 1rem;
+    @include btn--effect(var(--vliGray), var(--vdrViolet));
+    cursor: pointer;
+    margin: 0 auto;
+  }
