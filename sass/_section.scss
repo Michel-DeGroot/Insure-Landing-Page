@@ -27,7 +27,6 @@
   .benefit__item{
     padding: 1rem;
     @media(min-width: 700px){
-     /* transition: all 0.3s linear; */
       cursor: pointer;
       &:hover{
         box-shadow: -2px 2px 8px 2px hsla(240, 12%, 15%, 0.8);

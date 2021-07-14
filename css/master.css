@@ -178,10 +178,10 @@
       transition: all 0.2s linear;
     } /*
     .nav__link--effect:hover {
-      transform: scale(1.2);
+      
     } 
     .nav__link--effect:active {
-      transform: scale(0.9);
+      
     } */
     .nav__link--effect:hover {
       color: var(var(--drViolet));
